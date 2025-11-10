@@ -1,5 +1,13 @@
 {
+  "type": "module",
+  "scripts": {
+    "start": "web-dev-server",
+    "tsc": "tsc --noEmit"
+  },
   "devDependencies": {
-    "@web/dev-server": "^0.4.6"
+    "@quietui/quiet-browser": "^1.6.1",
+    "@web/dev-server": "^0.4.6",
+    "@web/dev-server-esbuild": "^1.0.4",
+    "typescript": "^5.9.3"
   }
 }
