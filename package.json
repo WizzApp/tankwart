@@ -2,12 +2,15 @@
   "type": "module",
   "scripts": {
     "start": "web-dev-server",
-    "tsc": "tsc --noEmit"
+    "tsc": "tsc --noEmit",
+    "build": "rollup -c rollup.config.js"
   },
   "devDependencies": {
     "@quietui/quiet-browser": "^1.6.1",
+    "@rollup/plugin-node-resolve": "^16.0.3",
     "@web/dev-server": "^0.4.6",
     "@web/dev-server-esbuild": "^1.0.4",
+    "@web/rollup-plugin-html": "^2.3.0",
     "typescript": "^5.9.3"
   }
 }
