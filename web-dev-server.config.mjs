@@ -1,4 +1,5 @@
 import { esbuildPlugin } from "@web/dev-server-esbuild";
+import { fileURLToPath } from 'url';
 
 export default {
   open: true,
@@ -6,6 +7,6 @@ export default {
   appIndex: 'pages/index.html',
   watch: true,
   plugins: [
-    esbuildPlugin({ ts: true }),
+    esbuildPlugin({ ts: true, tsconfig: fileURLToPath(new URL('./tsconfig.json', import.meta.url))}),
   ],
 };
