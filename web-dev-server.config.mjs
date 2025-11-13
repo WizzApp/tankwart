@@ -15,17 +15,14 @@ export default {
 	middleware: [
 		// handle open-props beta package here.
 		function rewriteOpenPropsImport(context, next) {
-			console.log(context);
 			if (
 				context.request.url.startsWith("/src/style/opbeta/") &&
 				context.request.url.endsWith(".css")
 			) {
-				console.log(context);
 				context.request.url = context.request.url.replace(
 					"/src/style/",
 					"/node_modules/"
 				);
-				console.log(context);
 			}
 
 			return next();
