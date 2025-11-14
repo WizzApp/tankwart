@@ -6,6 +6,7 @@
     "build": "npx vite build"
   },
   "devDependencies": {
+    "@alpinejs/csp": "^3.15.1",
     "@automerge/automerge-repo": "^2.5.0",
     "@automerge/automerge-repo-storage-indexeddb": "^2.5.0",
     "lit": "^3.3.1",
