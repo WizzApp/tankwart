@@ -6,9 +6,12 @@
     "build": "npx vite build"
   },
   "devDependencies": {
+    "@automerge/automerge-repo": "^2.5.0",
+    "@automerge/automerge-repo-storage-indexeddb": "^2.5.0",
     "lit": "^3.3.1",
     "opbeta": "npm:open-props@^2.0.0-beta.5",
     "typescript": "^5.9.3",
-    "vite": "^7.2.2"
+    "vite": "^7.2.2",
+    "vite-plugin-wasm": "^3.5.0"
   }
 }

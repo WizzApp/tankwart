@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html class="quiet-cloak">
+<html class="quiet-cloak" lang="de">
 	<head>
 		<link rel="stylesheet" href="imports.css" />
 		<script type="module" src="components/SimpleGreeting.ts"></script>
 		<script type="module" src="components/TwButton.ts"></script>
+		<script type="module">
+			import { initDb } from "./database/init.ts";
+			initDb();
+		</script>
 	</head>
 	<body>
 		Hello world!
